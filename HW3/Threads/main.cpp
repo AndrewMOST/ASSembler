@@ -36,10 +36,12 @@ int main(int argc, char* argv[]) {
 	for (size_t i = 0; i < num_of_threads - 1; i++)
 	{
 		std::thread thr(SameDigits, multiplicant, lower + i * nums_per_thread, lower + (i + 1) * nums_per_thread);
+		// std::cout << (int64_t) (lower + i * nums_per_thread) << " " << (int64_t) (lower + (i + 1) * nums_per_thread) << std::endl;
 		threads.emplace_back(std::move(thr));
 	}
 
-	std::thread thr(SameDigits, multiplicant, lower + num_of_threads * nums_per_thread, upper);
+	std::thread thr(SameDigits, multiplicant, lower + (num_of_threads - 1) * nums_per_thread, upper);
+    // std::cout << (int64_t) (lower + (num_of_threads - 1) * nums_per_thread) << " " << (int64_t) (upper) << std::endl;
 	threads.emplace_back(std::move(thr));
 
 	// Джоин
