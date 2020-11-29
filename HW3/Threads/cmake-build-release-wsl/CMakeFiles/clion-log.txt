@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/amost/Threads
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" "/mnt/c/Users/amost/OneDrive/Рабочий стол/ASSembler/HW3/Threads"
 CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
   CMake 3.17 or higher is required.  You are running version 3.16.3
 
