@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/amost/MP2/main.cpp
+iostream
+-
+thread
+-
+vector
+-
+mutex
+-
+stdexcept
+-
+chrono
+-
+
